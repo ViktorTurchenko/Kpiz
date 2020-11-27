@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placeholder Demo Web 2.0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!---Creating the body with members-->>
+<body>
+    <div class="container">
+        <h1>Our staff</h1>
+        <div class="main_menu">
+            <div class="list_of_workers">
+            </div>
+            <div class="infoworker" style="opacity: 0;">
+                <img class="worker_foto" src="" alt="Not found">
+                <div class="block">
+                    <p>Name:</p>
+                    <p id="name"></p>
+                </div>
+                <div class="block">
+                    <p>Date of applying:</p>
+                    <p id="date"></p>
+                </div>
+                <div class="block">
+                    <p>Position:</p>
+                    <p id="position"></p>
+                </div>
+            </div>
+        </div>
+        <button class="button_add_worker" onClick="add_window">Add worker</button>
+    </div>
+    <div id="new_window" class="add_worker_window">
+        <div class="add_worker_info">
+            <span class="exit">&times;</span>
+            <div class="form-group">
+                <p id="name-label">Click<a href="https://linkpicture.com/en/?set=en"> here </a>to upload</p>
+                <input type="text" name="photo" id="photo" class="form-control" placeholder="Enter URL">
+            </div>
+            <div class="form-group">
+                <p id="name-label">Name</p>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter name">
+            </div>
+            <div class="form-group">
+                <p id="number-label">Date of Applying</p>
+                <input type="date" name="date" id="number" class="form-control" placeholder="Enter date of applying">
+            </div>
+            <div class="form-group">
+                <p id="name-label">Position</p>
+                <input type="text" name="position" id="position" class="form-control" placeholder="Enter worker's position">
+            </div>
+            <div class="form-group btn">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="script.js"></script>
+</body>
+</html>

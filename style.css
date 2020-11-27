@@ -1,0 +1,147 @@
+body {
+    margin: auto;
+    width: 100%;
+    background-color: rgb(91, 142, 219);
+}
+
+
+.main_menu {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+}
+
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 1;
+    font-size: 50px;
+}
+
+.list_of_workers button {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    background-color: rgb(3, 46, 95);
+    border: 1px solid rgb(255, 255, 255);
+    cursor: pointer;
+    outline: none;
+    
+}
+
+.list_of_workers {
+    padding: 0 20px;
+}
+
+
+
+button:hover {
+    background-color: rgb(134, 202, 248);
+}
+
+.infoworker {
+    padding: 0 10px;
+    position: absolute;
+    right: 15%;
+
+}
+
+.infoworker p {
+    font-size: 20px;
+    margin: 0;
+}
+
+.block {
+    padding: 10px 0;
+}
+
+.button_add_worker {
+    position: absolute;
+    width: 20vh;
+    left: 10%;
+    bottom: 70%;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(3, 46, 95);
+    cursor: pointer;
+    outline: none;
+    transition: background-color .2s;
+}
+
+.add_worker_info {
+    background-color:  rgb(160, 213, 248);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    width: 60%;
+}
+
+.add_worker_info p {
+    margin: 20px 0 0 0;
+}
+
+.add_worker_window {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+
+.exit {
+    color: #fff9f9;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.exit:hover,
+.exit:focus {
+  color: rgb(255, 249, 249);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    position: relative;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    outline: none;
+    border-radius: 2px;
+    border: none;
+    width: 50%;
+    left: 25%;
+    background-color: rgb(3, 46, 95);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color .2s;
+    text-transform: uppercase;
+}
